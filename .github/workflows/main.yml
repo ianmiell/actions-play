@@ -1,0 +1,12 @@
+name: Play
+on: push
+jobs:
+  build:
+    name: Play
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: ./
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: whoami
