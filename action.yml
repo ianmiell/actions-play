@@ -1,0 +1,5 @@
+# action.yml
+name: 'Coveralls GitHub Action'
+description: 'Send test coverage data to Coveralls.io for analysis, change tracking, and notifications.'
+    description: 'Set to true if you are running parallel jobs, then use "parallel_finished: true" for the last action.'
+    required: false
